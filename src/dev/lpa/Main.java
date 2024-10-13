@@ -19,7 +19,8 @@ public class Main {
 
 //        testFile(filename);
 
-        File file = new File("/", filename);
+//        File file = new File("/", filename);    // parent path
+        File file = new File(".", filename);    // current directory, prints \. redundant name element
         System.out.println(file.getAbsoluteFile());
         if (!file.exists()) {
             System.out.println("File does not exist");
