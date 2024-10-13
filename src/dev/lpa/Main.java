@@ -15,10 +15,12 @@ public class Main {
           new File("").getAbsolutePath());
 
         String filename = "files/testing.csv"; // relative path
+//        String filename = "/files/testing.csv"; // absolute path
 
 //        testFile(filename);
 
-        File file = new File(filename);
+        File file = new File("/", filename);
+        System.out.println(file.getAbsoluteFile());
         if (!file.exists()) {
             System.out.println("File does not exist");
 //            System.out.println("Exiting program");
