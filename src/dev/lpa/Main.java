@@ -11,14 +11,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String filename = "testing.csv";
+        String filename = "files/testing.csv"; // relative path
 
-        testFile(filename);
+//        testFile(filename);
 
         File file = new File(filename);
         if (!file.exists()) {
             System.out.println("File does not exist");
-            System.out.println("Exiting program");
+//            System.out.println("Exiting program");
             return;
         }
         System.out.println("File exists");
