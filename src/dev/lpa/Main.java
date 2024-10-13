@@ -25,6 +25,10 @@ public class Main {
             return;
         }
         System.out.println("File exists");
+
+        for (File f : File.listRoots()) {
+            System.out.println(f);
+        }
     }
 
     public static void testFile(String filename) {
