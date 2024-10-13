@@ -11,6 +11,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("Current Working Directory (cwd) = " +
+          new File("").getAbsolutePath());
+
         String filename = "files/testing.csv"; // relative path
 
 //        testFile(filename);
